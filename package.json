@@ -1,0 +1,14 @@
+{
+  "name": "codesense-demo-shop",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A tiny shop checkout used to show CodeSense reviewing real pull requests.",
+  "license": "MIT",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
