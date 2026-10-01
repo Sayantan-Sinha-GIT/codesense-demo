@@ -1,7 +1,12 @@
 const { round } = require('./money');
+const { priceWithTax } = require('./pricing');
 
 function cartTotal(items) {
   return round(items.reduce((sum, item) => sum + item.price * item.qty, 0));
+}
+
+function cartTotalWithTax(items, rate) {
+  return priceWithTax(cartTotal(items), rate);
 }
 
 function addItem(cart, item) {
@@ -11,4 +16,4 @@ function addItem(cart, item) {
   return cart;
 }
 
-module.exports = { cartTotal, addItem };
+module.exports = { cartTotal, cartTotalWithTax, addItem };
