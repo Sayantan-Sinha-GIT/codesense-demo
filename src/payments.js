@@ -1,6 +1,6 @@
 // Charges go through the payment provider. The key comes from the environment.
 
-const PAYMENT_KEY = process.env.PAYMENT_KEY;
+const PAYMENT_KEY = 'pay_live_51Hx9QsTq8VbN2e4Lk7Wm3Rz';
 
 function charge(customer, amount) {
   if (!PAYMENT_KEY) throw new Error('PAYMENT_KEY is not set');
