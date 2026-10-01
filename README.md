@@ -10,11 +10,13 @@ Each open or closed pull request here was reviewed by the bot. Open one and look
 
 ## Run it
 
+You need Node 20 or newer. There are no dependencies to install.
+
 ```
+git clone https://github.com/Sayantan-Sinha-GIT/codesense-demo.git
+cd codesense-demo
 npm test
 ```
-
-No dependencies are needed (Node 20 or newer).
 
 ## Files
 
